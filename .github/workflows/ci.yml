@@ -1,14 +1,14 @@
-name: Run tests
+tabname: Run tests
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
+ esc pull_request:
     branches: [ "main" ]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+   tab runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
