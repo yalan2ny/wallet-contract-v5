@@ -1,4 +1,4 @@
-name: Run tests
+tabname: Run tests
 
 on:
   push:
