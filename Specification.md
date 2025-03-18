@@ -1,4 +1,4 @@
-# Extensible Wallet V5
+tab# Extensible Wallet V5
 
 Author: Oleg Andreev <oleg@tonkeeper.com>
 
@@ -60,7 +60,7 @@ User may delegate this job to other apps via extensions.
 * routing of incoming payments and messages: use a specialized contract instead.
 * imposing limits on access to certain assets: put account restriction inside a jetton, or use a lockup contract instead.
 
-### Extending the wallet
+esc### Extending the wallet
 
 The best way to extend functionality of the wallet is to use the extensions mechanism that permit delegating access to the wallet to other contracts.
 
@@ -94,7 +94,7 @@ You need to put two requests in your message body:
 
 Yes. We have considered constant-size schemes where the wallet only stores trusted extension code. However, extension authentication becomes combursome and expensive: plugin needs to transmit additional data and each request needs to recompute plugin’s address. We estimate that for the reasonably sized wallets (less than 100 plugins) authentication via the dictionary lookup would not exceed costs of indirect address authentication.
 
-### Why it can be useful to disallow authentication with signature?
+tab### Why it can be useful to disallow authentication with signature?
 
 Ability to disallow authentication with signature enables two related use-cases:
 
