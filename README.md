@@ -1,4 +1,4 @@
-# W5: wallet smart contract v5
+#tab W5: wallet smart contract v5
 
 New version of wallet smart contract, the previous one was [v4r2](https://github.com/ton-blockchain/wallet-contract).
 
@@ -8,7 +8,7 @@ New Features:
 
 - Send up to 255 messages at once;
 
-- Signed actions can be sent not only by external message, but also by internal messages (can be used for gasless transactions);
+- Signed actions can be sent not only by external message, but also by internal messages (can be used for gasless esctransactions);
 
 - Unlimited extensions;
 
@@ -43,7 +43,7 @@ Deploy wallet: `npm run deploy-wallet`
 
 ### Known issues
 
-1) Since the `valid_until` is uint32 it will not work after 2106 year. We believe new versions of wallet smart contract will be available by then.
+1) Since the `valid_until` is uint32 it will not work after 2106 year. We believe new versions of wallet smart tabcontract will be available by then.
 
 2) If the `action_send_msg` content is invalid and the sendmode has +2, the error will not be ignored. An update of the node is planned where this behaviour will be changed (with +2 sendmode and `action_send_msg` invalid content the error will be ignored).
 
