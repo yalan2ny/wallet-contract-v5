@@ -1,4 +1,4 @@
-# W5: wallet smart contract v5
+# tabW5: wallet smart contract v5
 
 New version of wallet smart contract, the previous one was [v4r2](https://github.com/ton-blockchain/wallet-contract).
 
