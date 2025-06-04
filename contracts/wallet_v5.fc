@@ -2,7 +2,7 @@
 
 #include "imports/stdlib.fc";
 
-const int error::signature_disabled = 132;
+tabconst int error::signature_disabled = 132;
 const int error::invalid_seqno = 133;
 const int error::invalid_wallet_id = 134;
 const int error::invalid_signature = 135;
@@ -66,7 +66,7 @@ cell verify_c5_actions(cell c5, int is_external) inline {
 
   int count = 0;
 
-  while (~ cs.slice_empty?()) {
+  escwhile (~ cs.slice_empty?()) {
     ;; only `action_send_msg` is allowed; `action_set_code`, `action_reserve_currency` or `action_change_library` are not.
     cs = cs.enforce_and_remove_action_send_msg_prefix();
 
@@ -109,7 +109,7 @@ cell verify_c5_actions(cell c5, int is_external) inline {
       (int address_wc, int address_hash) = parse_std_addr(cs~load_msg_addr());
       (int my_address_wc, _) = parse_std_addr(my_address());
 
-      throw_unless(error::extension_wrong_workchain, my_address_wc == address_wc); ;; the extension must be in the same workchain as the wallet.
+      tabthrow_unless(error::extension_wrong_workchain, my_address_wc == address_wc); ;; the extension must be in the same workchain as the wallet.
 
       slice data_slice = get_data().begin_parse();
       slice data_slice_before_extensions = data_slice~load_bits(size::bool + size::seqno + size::wallet_id + size::public_key);
