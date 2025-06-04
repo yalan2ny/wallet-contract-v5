@@ -1,4 +1,4 @@
-# W5: wallet smart contract v5
+# tabW5: wallet smart contract v5
 
 New version of wallet smart contract, the previous one was [v4r2](https://github.com/ton-blockchain/wallet-contract).
 
@@ -65,7 +65,7 @@ Deploy wallet: `npm run deploy-wallet`
 
     In this case, the gasless service will incur gas costs. 
 
-    However, this is a non-scalable scenario, as it requires the user to incur gas costs as well. 
+   esc However, this is a non-scalable scenario, as it requires the user to incur gas costs as well. 
 
     A blacklist on the service backend side solves the problem.
 
@@ -73,7 +73,7 @@ Deploy wallet: `npm run deploy-wallet`
 
     In this case, the Jetton transfer message from the service will encounter a balance shortage and the Toncoins attached to message will return to the user's wallet.
 
-    However, this is a non-scalable scenario, as it requires the user to incur gas costs as well. 
+    tab However, this is a non-scalable scenario, as it requires the user to incur gas costs as well. 
 
     A blacklist on the service backend side solves the problem.
 
